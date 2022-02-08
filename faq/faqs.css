@@ -1,0 +1,246 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px;
+}
+a{
+  text-decoration: none;
+}
+
+/* styles for navbar starts */
+
+#brand-name{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(211, 75, 75);
+}
+#brand-name:hover{
+  color:blue;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   transition: all 1s;
+ }
+
+ .navbar-brand{
+   padding-left: 130px;
+ }
+ .navbar-collapse{
+   padding-left: 270px;
+ }
+
+
+ .group1{
+   font-size: 17px;
+ }
+
+@media (max-width:800px) {
+  .navbar-brand{
+    padding-left: 1em;
+  }
+  .navbar-collapse{
+    padding-left: 1em;
+  }
+}
+/* styles for navbar ends here */
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1350px;
+  height: 550px;
+  margin: 130px 10px 50px 10px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  -webkit-box-shadow: 0px 10px 80px -10px rgba(34, 33, 33, 0.72);
+          box-shadow: 0px 10px 80px -10px rgba(51, 51, 51, 0.72);
+}
+
+
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+}
+
+.img-container-mobile {
+  display: none;
+}
+
+.img-girl {
+  position: absolute;
+  left: -80px;
+}
+
+.img-shadow {
+  position: absolute;
+  top: -240px;
+  left: -575px;
+}
+
+.img-box {
+  position: absolute;
+  top: 225px;
+  left: -130px;
+}
+
+.accordion-container {
+  width: 70%;
+  margin: 80px 40px;
+}
+
+.accordion-list {
+  width: 90%;
+}
+
+.accordion-list li {
+  border-bottom: 2px solid #e7e7e9;
+}
+
+.accordion-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+h1::after{
+    display: block;
+    background-color: #d338cb;
+    content: "";
+    height: 2px;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 20px;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+p {
+  color: #787887;
+  line-height: 18px;
+  font-size: 0.85rem;
+}
+
+.accordion-title:hover {
+  color: #9858eb;
+}
+
+.accordion-list p {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.accordion-list li.open h2 {
+  font-weight: 600;
+}
+
+.accordion-list li.open p {
+  max-height: 105px;
+  padding-bottom: 20px;
+}
+
+.accordion-list li.open figure {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 1350px) {
+  body {
+    font-size: 10px;
+  }
+  .container {
+    width: 70%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 20px;
+  }
+  .img-container,
+  .img-box {
+    display: none;
+  }
+  .img-container-mobile {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .img-girl-mobile {
+    position: absolute;
+    top: -125px;
+  }
+  .img-shadow-mobile {
+    position: absolute;
+    top: -20px;
+  }
+  .accordion-container {
+    margin: auto;
+    width: 90%;
+    padding-top: 120px;
+  }
+  .accordion-list {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+}
