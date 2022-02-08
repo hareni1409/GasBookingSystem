@@ -1,0 +1,144 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px; 
+}
+nav{
+    background-color: #eee;
+}
+#brand-name{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(211, 75, 75);
+}
+#brand-name:hover{
+  color:blue;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .navbar-brand{
+   padding-left: 130px;
+ }
+ .navbar-collapse{
+   padding-top: 30px;
+   padding-left: 270px;
+ }
+
+
+ .group1{
+   font-size: 17px;
+ }
+
+@media (max-width:800px) {
+  .navbar-brand{
+    padding-left: 1em;
+  }
+  .navbar-collapse{
+    padding-left: 1em;
+  }
+}
+
+.navdrop{
+  padding-left: 2px;
+  padding-top: 3px;
+}
+.dropdown-toggle{
+  padding: 1px;
+}
+/* styles for navbar ends here */
+.main{
+  background-image: linear-gradient(rgba(34, 34, 31, 0.4),rgba(34, 32, 31, 0.4)), url("flame.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.card{
+    display: flex;
+   position: absolute;
+   top: 240px;
+   left: 80px;
+   width: 32%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    padding: 30px 0px; 
+    padding-bottom: 30px;
+}
+
+:root {
+  
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 420px;
+  height: 40px;
+  border-radius: .25em;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 11px;
+  background-color: #d7e3ee;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.buttonbook{
+
+    position: absolute;
+    left: 200px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:#d7e3ee;
+}
+/* Other styles*/
+

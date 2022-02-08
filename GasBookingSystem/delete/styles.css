@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px;
+}
+a{
+  text-decoration: none;
+}
+/* styles for navbar starts */
+
+#brand-name{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(211, 75, 75);
+}
+#brand-name:hover{
+  color:blue;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .navbar-brand{
+   padding-left: 130px;
+ }
+ .navbar-collapse{
+   padding-top: 10px;
+   padding-left: 270px;
+ }
+
+
+ .group1{
+   font-size: 17px;
+ }
+
+@media (max-width:800px) {
+  .navbar-brand{
+    padding-left: 1em;
+  }
+  .navbar-collapse{
+    padding-left: 1em;
+  }
+}
+
+.navdrop{
+  padding-left: 2px;
+  padding-top: 3px;
+}
+.dropdown-toggle{
+  padding: 1px;
+}
+/* styles for navbar ends here */
